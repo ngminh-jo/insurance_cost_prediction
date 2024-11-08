@@ -1,11 +1,37 @@
-## In this project I will apply regression techniques of supervised learning to predict the medical insurance costs.
-all the work is clearly explained and interpreted  in medical-insurance-cost-predict.ipynb.
+## Project Overview
+This project aims to predict medical insurance costs using regression techniques from supervised learning. All code and explanations are provided in the `medical-insurance-cost-predict.ipynb` notebook.
 
-After the data exploration and data preprocessing, multiple regression algorithms like Linear Regression(Benchmark model), decision trees, random forest, Support Vector Machines, k-nearest neighbors for regression are considered and compared based on the metrics.
-Random Forest Regressor (mse: 15,78% and r2_score: 79,7%) has the best performance among these algorithms and this is a significant improvement compared to our benchmark model linear regression ((mse: 17,67% and r2_score: 72.02%).
-So I choose to use random forest technique for this project and focus on optimizing the random forest model.
-* The random grid does help us to search for the better hyperparameters and the result is improved (mse: 13,74% and r2_score: 81,41%) in compare to the result before (mse: 15,78% and r2_score: 79,7%)
-* After that the grid search with cross-validation does not significantly improve our result, but there is still a slightly better result in mse.
-Final result has 
-* mean_squared_error : 0.137330
-* r2_score : 0.814193
+## Methodology
+After thorough data exploration and preprocessing, various regression algorithms were tested and compared, including:
+- **Linear Regression** (Benchmark Model)
+- **Decision Trees**
+- **Random Forest**
+- **Support Vector Machines**
+- **K-Nearest Neighbors**
+
+Each model was evaluated based on key metrics like mean squared error (MSE) and R² score.
+
+## Results and Model Selection
+Among the algorithms, the **Random Forest Regressor** achieved the best performance, with the following metrics:
+- **MSE:** 15.78%
+- **R² Score:** 79.7%
+
+This was a significant improvement over the benchmark model, Linear Regression, which had:
+- **MSE:** 17.67%
+- **R² Score:** 72.02%
+
+Based on these results, the Random Forest model was selected, and further efforts were focused on optimizing this model.
+
+## Model Optimization
+1. **Randomized Search:** A random search was conducted to identify better hyperparameters, improving the model performance to:
+   - **MSE:** 13.74%
+   - **R² Score:** 81.41%
+
+2. **Grid Search with Cross-Validation:** Further tuning with grid search provided a slight improvement in MSE but no significant changes overall.
+
+## Final Model Performance
+The final optimized Random Forest model achieved:
+- **Mean Squared Error:** 0.1373
+- **R² Score:** 0.8142
+
+This result demonstrates the effectiveness of the Random Forest approach for predicting medical insurance costs.
